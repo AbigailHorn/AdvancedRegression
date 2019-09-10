@@ -33,7 +33,7 @@ get_csv_chapter_exercise <- function() {
 load_csv_exercise <- function(chapter, exercise) {
   readr::read_csv(file = get_csv_filepath_execise(chapter, exercise),
                   col_types = get_csv_cols_exercise(chapter, exercise),
-                  na = get_csv_nas(chapter, exercise))
+                  na = get_csv_nas_exercise(chapter, exercise))
 }
 
 
