@@ -1,4 +1,6 @@
-# Create a tibble with all the chapters and exercise that we have dataset for
+#' get_csv_chapter_example
+#'
+#' Create a tibble with all the chapters and exercise that we have dataset for
 get_csv_chapter_exercise <- function() {
   dplyr::tibble(
     chapter = c(
@@ -29,7 +31,14 @@ get_csv_chapter_exercise <- function() {
 }
 
 
-# Load the CSV file
+
+#' load_csv_exercise
+#'
+#' Load the CSV file
+#' @param chapter Chapter to load
+#' @param exercise Exercise in the chapter to load
+#' @importFrom readr read_csv
+#' @return Nothing
 load_csv_exercise <- function(chapter, exercise) {
   readr::read_csv(file = get_csv_filepath_execise(chapter, exercise),
                   col_types = get_csv_cols_exercise(chapter, exercise),
@@ -37,7 +46,14 @@ load_csv_exercise <- function(chapter, exercise) {
 }
 
 
-# create the filepath for the raw CSV file
+#' get_csv_filepath_execise
+#'
+#' create the filepath for the raw CSV file
+#' @param chapter Chapter to create the file path for
+#' @param exercise Exercise to create the file path for
+#' @param path_base Base path
+#' @importFrom stringr str_pad
+#'
 get_csv_filepath_execise <- function(chapter, exercise,
                                      path_base = file.path('.', 'inst', 'exercise')){
 
@@ -49,7 +65,12 @@ get_csv_filepath_execise <- function(chapter, exercise,
 }
 
 
-# Create a RDA file for a chapter and exercise
+#' save_data_exercise
+#' Create a RDA file for a chapter and exercise
+#'
+#' @param chapter Example chapter number
+#' @param exercise Example exercise number
+#'
 save_data_exercise <- function(chapter, exercise) {
   name <- paste0('exercise_', 'c', chapter, 'e', exercise)
   assign(name, load_csv_exercise(chapter, exercise))
@@ -58,7 +79,12 @@ save_data_exercise <- function(chapter, exercise) {
   invisible()
 }
 
-# Batch make the RDA files
+#' make_data_exercise
+#'
+#' Batch make the RDA files
+#'
+#' @param df data.frame to use
+#' @importFrom purrr map2
 make_data_exercise <- function(df = get_csv_chapter_exercise()) {
   purrr::map2(df$chapter, df$exercise, save_data_exercise)
   invisible()

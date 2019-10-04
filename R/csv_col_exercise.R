@@ -1,4 +1,4 @@
-# Get the col() information for reading CSV files
+#' @rdname get_csv_cols
 get_csv_cols_exercise <- function(chapter, exercise) {
   switch(chapter,
     get_csv_cols_chapter_1_exercise(exercise),
@@ -14,7 +14,8 @@ get_csv_cols_exercise <- function(chapter, exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_1_exercise <- function(exercise) {
   switch(exercise,
     stop(paste('chapter 1, exercise', exercise, 'is invalid')),
@@ -64,7 +65,8 @@ get_csv_cols_chapter_1_exercise <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_2_exercise <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -95,7 +97,8 @@ get_csv_cols_chapter_2_exercise <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_3_exercise <- function(exercise) {
   switch(exercise,
     stop(paste('chapter 3, exercise', exercise, 'is invalid')),
@@ -126,7 +129,8 @@ get_csv_cols_chapter_3_exercise <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_4_exercise <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -167,7 +171,8 @@ get_csv_cols_chapter_4_exercise <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_5_exercise <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -227,7 +232,8 @@ get_csv_cols_chapter_5_exercise <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_6_exercise <- function(exercise) {
   switch(exercise,
     stop(paste('chapter 6, exercise', exercise, 'is invalid')),
@@ -278,6 +284,8 @@ get_csv_cols_chapter_6_exercise <- function(exercise) {
   )
 }
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_7_exercise <- function(exercise) {
   switch(exercise,
     stop(paste('chapter 7, exercise', exercise, 'is invalid')),
@@ -344,7 +352,8 @@ get_csv_cols_chapter_7_exercise <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_8_exercise <- function(exercise) {
   switch(exercise,
     stop(paste('chapter 8, exercise', exercise, 'is invalid')),
@@ -397,6 +406,8 @@ get_csv_cols_chapter_8_exercise <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_9_exercise <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -457,6 +468,8 @@ get_csv_cols_chapter_9_exercise <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_10_exercise <- function(exercise) {
   switch(exercise,
     stop(paste('chapter 10, exercise', exercise, 'is invalid')),

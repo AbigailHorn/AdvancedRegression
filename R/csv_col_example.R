@@ -1,4 +1,10 @@
-# Get the col() information for reading CSV files
+#' get_csv_cols_example
+#'
+#' Get the col() information for reading CSV files
+#'
+#' @param chapter Book chapter
+#' @param exercise Exercise number
+#' @rdname get_csv_cols
 get_csv_cols_example <- function(chapter, exercise) {
   switch(chapter,
     get_csv_cols_chapter_1_example(exercise),
@@ -14,7 +20,8 @@ get_csv_cols_example <- function(chapter, exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_1_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -26,7 +33,8 @@ get_csv_cols_chapter_1_example <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_2_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -42,6 +50,8 @@ get_csv_cols_chapter_2_example <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_3_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -53,6 +63,8 @@ get_csv_cols_chapter_3_example <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_4_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -77,6 +89,8 @@ get_csv_cols_chapter_4_example <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_5_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -100,7 +114,8 @@ get_csv_cols_chapter_5_example <- function(exercise) {
   )
 }
 
-
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_6_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -125,6 +140,9 @@ get_csv_cols_chapter_6_example <- function(exercise) {
   )
 }
 
+
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_7_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -159,6 +177,8 @@ get_csv_cols_chapter_7_example <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_8_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -175,6 +195,8 @@ get_csv_cols_chapter_8_example <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_9_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
@@ -190,6 +212,8 @@ get_csv_cols_chapter_9_example <- function(exercise) {
 }
 
 
+#' @import readr
+#' @rdname get_csv_cols
 get_csv_cols_chapter_10_example <- function(exercise) {
   switch(exercise,
     readr::cols( # 1
