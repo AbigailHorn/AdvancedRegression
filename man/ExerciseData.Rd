@@ -6,12 +6,13 @@
 \alias{GammaExerciseData}
 \alias{HierarchicalExerciseData}
 \alias{LogisticExerciseData}
-\alias{LongitudinalExerciseData}
+\alias{LongitudinalNormalExerciseData}
+\alias{LongitudinalPoissonExerciseData}
 \alias{NormalExerciseData}
 \alias{PoissonExerciseData}
 \alias{ZIPExerciseData}
 \title{Exercise Data}
-\format{An object of class \code{data.frame} with 20 rows and 5 columns.}
+\format{An object of class \code{data.frame} with 19 rows and 6 columns.}
 \usage{
 BetaExerciseData
 
@@ -21,7 +22,9 @@ HierarchicalExerciseData
 
 LogisticExerciseData
 
-LongitudinalExerciseData
+LongitudinalNormalExerciseData
+
+LongitudinalPoissonExerciseData
 
 NormalExerciseData
 

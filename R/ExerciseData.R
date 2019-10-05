@@ -14,7 +14,10 @@
 "LogisticExerciseData"
 
 #' @rdname ExerciseData
-"LongitudinalExerciseData"
+"LongitudinalNormalExerciseData"
+
+#' @rdname ExerciseData
+"LongitudinalPoissonExerciseData"
 
 #' @rdname ExerciseData
 "NormalExerciseData"
